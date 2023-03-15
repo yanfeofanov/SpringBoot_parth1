@@ -7,20 +7,24 @@ import org.springframework.stereotype.Service;
 public class CalculatorService {
 
 
-    public String calculatorPlus(int numFirst, int numTwo) {
-        return numFirst + " + " + numTwo + " = " + (numFirst + numTwo);
+    public int calculatorPlus(int numFirst, int numTwo) {
+        int sum = numFirst + numTwo;
+        return sum;
     }
 
-    public String calculatorMinus(int numFirst, int numTwo) {
-        return numFirst + " - " + numTwo + " = " + (numFirst - numTwo);
+    public int calculatorMinus(int numFirst, int numTwo) {
+        int min = numFirst - numTwo;
+        return min;
     }
 
-    public String calculatorMultiply(int numFirst, int numTwo) {
-        return numFirst + " * " + numTwo + " = " + (numFirst * numTwo);
+    public int calculatorMultiply(int numFirst, int numTwo) {
+        int mult = (numFirst*numTwo);
+        return mult;
     }
 
-    public String calculatorDivide(int numFirst, int numTwo) {
-        return numFirst + " / " + numTwo + " = " + (numFirst / numTwo);
+    public int calculatorDivide(int numFirst, int numTwo) {
+        int divid = (numFirst/numTwo);
+        return divid;
     }
 
 
